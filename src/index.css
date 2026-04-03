@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* This tells Tailwind v4 to trigger 'dark:' classes when the .dark class is on the html tag */
+@custom-variant dark (&:is(.dark *));
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-200;
+}
+
+/* Base styles for dark mode body */
+.dark body {
+  @apply bg-gray-950 text-gray-100;
+}
